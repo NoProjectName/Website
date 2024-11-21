@@ -1,0 +1,45 @@
+/* Old newest post
+
+{% set section = get_section(path="posts/_index.md") %} {% set newest
+=section.pages[0] %}
+<a class="prev_text">
+    <li class="articel_prev">
+        <img class="prev_img" src="../img/1.jpg" />
+        <a class="prev_text"> {{ newest.title }} </a>
+    </li>
+</a>
+
+*/
+
+.articels {
+    text-align: center;
+}
+
+.articel_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.articel_prev {
+    border: 2.5px solid #222222;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 22rem;
+}
+.articel_prev:hover {
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.prev_img {
+    width: 20rem;
+}
+
+.prev_text {
+    text-decoration: none;
+    color: var(--text);
+}

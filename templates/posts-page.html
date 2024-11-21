@@ -1,0 +1,13 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="headline">
+    <a class="back" href="../"> <- Back </a>
+    <a class="post_title"> </a>
+    <a class="date"><strong>{{ page.date }}</strong></a>
+</div>
+<div class="title">
+    <a class="post_title"> {{ page.title }} </a>
+</div>
+<div class="content">{{ page.content | safe }}</div>
+
+{% endblock content %}

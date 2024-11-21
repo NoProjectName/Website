@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html lang="en">
+    {% include "partials/header.html" %}
+
+    <body>
+        <div class="box">
+            {% include "partials/nav.html" %}
+            <div class="container">
+                <div>
+                    {% block index %} {% endblock index%} {% block content %} {%
+                    endblock content%}
+                </div>
+            </div>
+        </div>
+        {% include "partials/footer.html" %}
+
+        {% block rss %}
+          <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+        {% endblock %}
+    </body>
+</html>
