@@ -10,7 +10,15 @@
     </label>
 
     <nav class="navbar">
-        <a class="nav-text" href="#">RSS</a>
-        <a class="nav-text" href="#">Links</a>
+        <a
+            class="nav-text"
+            href='{{ get_url(path="rss.xml", trailing_slash=false) }}'
+            >RSS</a
+        >
+        <a
+            class="nav-text"
+            href='{{ get_url(path="posts", trailing_slash=false) }}'
+            >Links</a
+        >
     </nav>
 </header>

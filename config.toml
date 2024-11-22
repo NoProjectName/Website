@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://npn.net"
+base_url = "https://noprojectname.github.io/Website/"
 
 title = "No title given"
 description = "Someone forgot to add a description"
