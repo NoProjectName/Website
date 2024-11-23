@@ -22,7 +22,7 @@ body {
 .container {
 }
 
-.pfa {
+.top-container {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -35,7 +35,7 @@ body {
 
 .headtext {
     position: relative;
-    font-family: "Inter-Bold", cursive;
+    font-family: "Inter-Bold", Arial;
     font-weight: 700;
     font-size: 6rem;
     color: var(--text);
@@ -50,48 +50,7 @@ svg {
 
 /* Index */
 
-/* List of Blogposts */
-
-.articels {
-    text-align: center;
-}
-
-.articel_list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    list-style: none;
-    width: clamp(20em, 100vw, 60em);
-    margin-inline: auto;
-}
-
-.articel_prev {
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-    margin: 0.8rem;
-    text-align: left;
-    font-size: 2rem;
-    border-radius: 0.4rem;
-    border: 2.5px solid #222222;
-    box-shadow: rgba(149, 157, 165, 0.2) 2px 2px 14px;
-}
-.articel_prev:hover {
-    cursor: pointer;
-    background: var(--primary);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 20px 40px;
-}
-
-.prev_img {
-    width: 20rem;
-}
-
-.prev_text {
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--text);
-}
+/* List of Posts, moved to based.css */
 
 /* Footer */
 

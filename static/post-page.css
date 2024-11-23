@@ -123,41 +123,7 @@ code {
     background-color: rgba(194, 194, 194, 0.267);
 }
 
-/*
-
-  Posts Page
-
-  */
-
-.postlist {
-    width: fit-content;
-    margin-inline: auto;
-}
-
-.title {
-    font-family: "Inter-Bold";
-    font-size: 45px;
-    color: var(--primary);
-    text-decoration: underline;
-    text-align: center;
-    padding-top: 30px;
-}
-
-.posts_list {
-    font-family: "Inter-Medium";
-    font-size: 35px;
-    padding: 10px;
-}
-
-.posts_list_text {
-    color: var(--text);
-    text-decoration: none;
-}
-
-.posts_list:hover {
-    color: var(--primary);
-    text-decoration: underline;
-}
+/* List of Posts, moved to based.css */
 
 /* Projects */
 

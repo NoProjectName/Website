@@ -5,13 +5,17 @@
 <h1 class="title">
   {{ section.title }}
 </h1>
-<div class="postlist">
-  <ul>
-    <!-- If you are using pagination, section.pages will be empty. You need to use the paginator object -->  
-    {% for page in section.pages %}
-    <li class="posts_list"><a class="posts_list_text" href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-    {% endfor %}
-  </ul>
+
+<div class="articels">
+    <ul class="articel_list">
+        {% for page in section.pages %}
+        <li class="articel_prev">
+             <a class="prev_text" href="{{ page.permalink | safe }}">
+                {{ page.title }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
 
 

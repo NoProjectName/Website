@@ -26,22 +26,19 @@
         />
     </g>
 </svg>
-<div class="pfa">
-    <a class="headtext">No Project Name </a>
+<div class="top-container">
+    <a class="headtext"> No Project Name </a>
 </div>
 
 <div class="articels">
     <ul class="articel_list">
-        {% set section = get_section(path="posts/_index.md") %} {% for page in
-        section.pages %}
-        <a class="prev_text" href="{{ page.permalink | safe }}">
-            <li class="articel_prev">
-                <a class="prev_text" href="{{ page.permalink | safe }}">
-                    {{ page.title }}
-                </a>
-            </li>
-        </a>
-
+        {% set section = get_section(path="posts/_index.md") %}
+        {% for page in section.pages %}
+        <li class="articel_prev">
+             <a class="prev_text" href="{{ page.permalink | safe }}">
+                {{ page.title }}
+            </a>
+        </li>
         {% endfor %}
     </ul>
 </div>
