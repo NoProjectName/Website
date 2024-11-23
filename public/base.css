@@ -1,0 +1,61 @@
+:root {
+    --text: #ffffff;
+    --background: #080808;
+    --primary: #99250b;
+    --secondary: #4c5846;
+    --accent: #809988;
+    --nav: #0022e2;
+    --wrapper: #cbd8d2;
+}
+
+/* Fonts */
+
+.H_black {
+    font-family: "Inter-Bold", Arial;
+    font-weight: 700;
+    font-size: 6rem;
+    color: var(--text);
+}
+
+.H_bold {
+    font-family: "Inter-Bold", Arial;
+    font-size: 8rem;
+    color: var(--text);
+}
+
+/* List of Articels*/
+
+.articels {
+    text-align: center;
+    list-style: inside;
+}
+
+.articel_list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: clamp(20em, 100vw, 60em);
+    margin-inline: auto;
+}
+
+.articel_prev {
+    box-sizing: border-box;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    margin: 0.8rem;
+    text-align: left;
+    font-size: 2rem;
+}
+.articel_prev:hover {
+    cursor: pointer;
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.prev_text {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text);
+}

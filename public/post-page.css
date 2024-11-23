@@ -1,0 +1,186 @@
+/*
+
+Post Display page
+
+*/
+
+/* Page Header */
+.headline {
+    margin-top: 0;
+    max-width: 80rem;
+    margin-inline: auto;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.title {
+    max-width: 80rem;
+    padding-bottom: 4rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.back {
+    grid-area: a;
+    font-family: "Inter-Bold";
+    font-size: 28px;
+    color: var(--text);
+    text-align: center;
+    text-decoration: none;
+}
+
+.back:hover {
+    color: var(--primary);
+}
+
+.post_title {
+    font-family: "Inter-Bold", cursive;
+    font-size: 3rem;
+    color: var(--primary);
+    text-decoration: underline;
+    width: auto;
+    letter-spacing: -0.15rem;
+    grid-area: b;
+}
+
+.date {
+    grid-area: c;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+/* Page Desing */
+
+.content {
+    width: 750px;
+    margin-inline: auto;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.5em;
+}
+
+h1 {
+    font-family: "Inter-Bold";
+    font-size: 3rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.h1c {
+    text-align: center;
+    font-family: "Inter-Bold";
+    font-size: 3rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* If you want to ad something befor the headlines
+  h2::before{
+    content: "# ";
+    color: var(--text);
+    font-size: 2.2rem;
+  }
+    */
+h2 {
+    font-family: "Inter-Bold";
+    font-size: 2.5rem;
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(
+        0deg,
+        var(--primary) -16.18%,
+        rgba(71, 38, 38, 0) 61.76%
+    );
+}
+
+h20 {
+    font-family: "Inter-Bold";
+    font-size: 2.5rem;
+    width: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 1.3rem;
+    margin-left: 25px;
+    line-height: 1.5;
+}
+code {
+    font-family: "Inter-Thin";
+    font-size: 1.3rem;
+    background-color: rgba(194, 194, 194, 0.267);
+}
+
+/* List of Posts, moved to based.css */
+
+/* Projects */
+
+.projectlist {
+    width: 80%;
+    margin-inline: auto;
+}
+
+.project-wrapper {
+    color: black;
+}
+
+/* Hide the toggle checkbox */
+#expand-toggle {
+    display: none;
+}
+
+/* Box width h2 and button */
+
+.wrapper-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 244, 240);
+    border-radius: 0.6rem;
+}
+
+.wrapper-top,
+.expandable {
+    padding: 10px;
+}
+
+#expandable1 {
+    visibility: visible;
+    padding: 15px;
+}
+
+#expandable1.open {
+    visibility: collapse;
+}
+
+#expand-btn {
+    transform: rotate(180deg);
+}
+
+.expand-btn-img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+.project-font {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.project-font:hover {
+    text-decoration: underline;
+}

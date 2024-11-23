@@ -1,0 +1,61 @@
+@import "base.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: "Archivo", Arial;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    margin-top: 4rem;
+}
+
+.container {
+}
+
+.top-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    padding: 30px;
+    margin: auto;
+    min-height: 30rem;
+}
+
+.headtext {
+    position: relative;
+    font-family: "Inter-Bold", Arial;
+    font-weight: 700;
+    font-size: 6rem;
+    color: var(--text);
+}
+
+svg {
+    filter: blur(200px);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* Index */
+
+/* List of Posts, moved to based.css */
+
+/* Footer */
+
+footer {
+    display: none;
+    border-top: 1px solid #636363;
+    background: yellow;
+}
